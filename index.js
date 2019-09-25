@@ -23,13 +23,7 @@
   //function to line-through or undo line-through when check is pushed
 $('.shopping-item-toggle').on('submit', function () {
   // if the span with the '.shopping-item' class also includes '.shopping-item__checked' class, remove the checked class. else add checked class to that span
-  if ($(this).is(".shopping-item__checked")) {
-    $('.shopping-item').removeClass('.shopping-item__checked')
-    }
-  //  OR 
-  else if (!$(this).is(".shopping-item__checked")) {
-    $('.shopping-item').addClass('.shopping-item__checked')
-    };
+  $(".shopping-item").toggleClass(".shopping-item__checked")
 })
 
 // function to delete a list item when delete is pushed
