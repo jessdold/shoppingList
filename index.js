@@ -28,7 +28,7 @@
 
 // function to delete a list item when delete is pushed
 
-$('.shopping-item-delete').on('submit', function(event) {
+$('.shopping-item-delete').on('submit', function() {
   // delete that whole <li>...but how do i tell it to grab/delete only that particular li?
   $(this).parents("li").remove();
 })
